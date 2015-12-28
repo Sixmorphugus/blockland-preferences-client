@@ -30,7 +30,7 @@ function newSettingsGui::addCategory(%this, %id, %category, %icon) {
 		%icon = %default; // default;
 	}
 	
-	if(!isFile("add-ons/Support_Prefs/client/prefmanager/resources/icons/" @ %icon @ ".png")) {
+	if(!isFile("add-ons/Client_Prefs/client/prefmanager/resources/icons/" @ %icon @ ".png")) {
 		%icon = %default; // use default if icon cannot be found;
 	}
 	
@@ -39,7 +39,7 @@ function newSettingsGui::addCategory(%this, %id, %category, %icon) {
 		position = 2 SPC %this.catListPos;
 		extent = "16 16";
 		color = "0 0 0 255";
-		bitmap = "add-ons/Support_Prefs/client/prefmanager/resources/icons/" @ %icon @ ".png";
+		bitmap = "add-ons/Client_Prefs/client/prefmanager/resources/icons/" @ %icon @ ".png";
 	};
 	
 	NewSettingsGui_Categories.getGroup().add(%c);
